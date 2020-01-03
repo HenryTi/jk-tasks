@@ -42,7 +42,7 @@ position: relative;
 }
 .jk-cart>u {
     position: absolute;
-    right: -1rem;
+    right: 1rem;
     top: 0rem;
     font-size: 0.7em;
     background-color: red;

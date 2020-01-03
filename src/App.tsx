@@ -2,11 +2,27 @@
 import * as React from 'react';
 import './App.css';
 import { start, NavView, nav } from 'tonva';
-import { CApp, appConfig } from './nv';
-//import { faceTabs } from 'facetabs';
+import { appConfig, assistappConfig, setting } from './appConfig';
+import { CApp } from './CApp';
 
-//const tonvaApp = "bruce/TestApp";
-nav.setSettings(appConfig);
+//启动前获取连接地址，判断是销售助手还是轻代理
+if (document.domain === setting.appUrlDomain) {
+    //if (url === "c.jkchemical.com") {
+    //if (url === "localhost") {
+    document.title = "销售助手";
+    let $favicon: any = document.querySelector('link[rel="shortcut icon"]');
+    $favicon.attributes.href.value = "/assistlogo.png";
+    let a = assistappConfig;
+    nav.setSettings(a);
+
+} else {
+    document.title = "轻代理";
+    let $favicon: any = document.querySelector('link[rel="shortcut icon"]');
+    $favicon.attributes.href.value = "/logo.png";
+    let a = appConfig;
+    nav.setSettings(a);
+}
+
 class App extends React.Component {
 
     private onLogined = async () => {
@@ -22,6 +38,7 @@ class App extends React.Component {
         //await b.d();
         //nav.push(<div>ddd</div>)
     }
+
     public render() {
         // notLogined={this.onLogined}
         return <NavView onLogined={this.onLogined} />
