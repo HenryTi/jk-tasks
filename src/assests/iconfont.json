@@ -13,6 +13,13 @@
       "unicode_decimal": 58917
     },
     {
+      "icon_id": "410628",
+      "name": "更新",
+      "font_class": "gengxin",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
       "icon_id": "554357",
       "name": "购物车",
       "font_class": "iconset0308",
@@ -174,6 +181,20 @@
       "unicode_decimal": 58968
     },
     {
+      "icon_id": "2866795",
+      "name": "方向",
+      "font_class": "right",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "3058790",
+      "name": "方向",
+      "font_class": "left-arrow",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
       "icon_id": "3745185",
       "name": "任务完成",
       "font_class": "renwuwancheng",
@@ -209,6 +230,20 @@
       "unicode_decimal": 58895
     },
     {
+      "icon_id": "4993866",
+      "name": "方向 - 下",
+      "font_class": "down",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "4993952",
+      "name": "方向 - 下",
+      "font_class": "fangxiang-xia",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
       "icon_id": "5269757",
       "name": "优惠券团购",
       "font_class": "youhuiquantuangou",
@@ -228,6 +263,20 @@
       "font_class": "guanyu",
       "unicode": "e60e",
       "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "6046683",
+      "name": "方向-左",
+      "font_class": "fangxiang",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "6046697",
+      "name": "方向 -右",
+      "font_class": "fangxiang1",
+      "unicode": "e626",
+      "unicode_decimal": 58918
     },
     {
       "icon_id": "6348675",
@@ -284,6 +333,13 @@
       "font_class": "shezhi2",
       "unicode": "e864",
       "unicode_decimal": 59492
+    },
+    {
+      "icon_id": "11954657",
+      "name": "内容",
+      "font_class": "neirong",
+      "unicode": "e704",
+      "unicode_decimal": 59140
     }
   ]
 }

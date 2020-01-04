@@ -401,6 +401,10 @@ export class CSalesTask extends CUqBase {
         cCustomer.showCustomerDetail(customerId);
     }
 
+    showPost = () => {
+        this.cApp.cPost.showPostList();
+    }
+
     render = observer(() => {
         if (this.isLogined) {
             return this.renderView(VMain);

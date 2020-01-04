@@ -34,7 +34,7 @@ export class VBalance extends VPage<CBalance> {
                 </div>
                 <div className="small text-muted text-center" style={{ width: "100%", position: "absolute", bottom: "4%" }} >
                     <div className="py-2 h6 text-primary">常见问题</div>
-                    <div>本服务有百灵威提供</div>
+                    <div>本服务由百灵威提供</div>
                 </div>
             </div>
         </Page >

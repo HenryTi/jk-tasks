@@ -51,6 +51,7 @@ export class CBalance extends CUqBase {
     //计算更新业绩
     getComputeAchievement = async () => {
         await this.uqs.salesTask.ComputeAchievement.submit({});
+        //await this.uqs.salesTask.ComputeBalance.submit({});
         let query = { user: this.user.id };
         let result = await this.uqs.salesTask.SearchAchievement.obj(query);
         if (result) {

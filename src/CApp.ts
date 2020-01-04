@@ -17,6 +17,7 @@ import { ProductCart } from "model/productcart";
 import { CBalance } from "achievement/CBalance";
 import { setting } from "appConfig";
 import { AssistSales, AgentSales } from "model/sales";
+import { CPost } from "post/CPost";
 
 export class CApp extends CAppBase {
     get uqs(): UQs { return this._uqs };
@@ -37,6 +38,7 @@ export class CApp extends CAppBase {
     cCoupon: CCoupon;
     cWebUser: CInnerCustomer;
     cBalance: CBalance;
+    cPost: CPost;
 
     protected newC<T extends CUqBase>(type: IConstructor<T>): T {
         return new type(this);
@@ -68,6 +70,7 @@ export class CApp extends CAppBase {
         this.cCoupon = this.newC(CCoupon);
         this.cWebUser = this.newC(CInnerCustomer);
         this.cBalance = this.newC(CBalance);
+        this.cPost = this.newC(CPost);
 
         /** 启动销售任务列表*/
         //this.cSalesTask.start();

@@ -123,11 +123,28 @@ export interface UqSalesTask {
     SearchBalanceHistory: Query;
     WebUserAccountMap: Map;
     AddWebUserAccountMap: Action;
+    ComputeBalance: Action;
+    SearchMyCustomerByPost: Query;
+
 }
 
 export interface UqMember {
     MemberAction: Action;
     MemberRecommender: Map;
+}
+
+export interface UqWebBuilder {
+    Content: Tuid;
+    Template: Tuid;
+    Image: Tuid;
+    Post: Tuid;
+    SearchPost: Query;
+    SearchTemplate: Query;
+    SearchImage: Query;
+    AgentPost: Map;
+    WebPost: Map;
+    AssistPost: Map;
+    CustomerPost: Map;
 }
 
 export interface UQs {
@@ -141,4 +158,5 @@ export interface UQs {
     warehouse: UqWarehouse;
     salesTask: UqSalesTask;
     member: UqMember;
+    webBuilder: UqWebBuilder;
 }
